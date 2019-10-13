@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia Game</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div id="score"></div>
+  <div id= "start" class="jumbotron">    
+    <h1 class="text-center">Coding Quiz Challenge!</h1>
+
+    <button id = "highScore">View HighScore</button>
+
+    <div class="text-center">
+
+      <!-- Here we have our button with id random-button -->
+      <button id="random-button" class="btn btn-primary btn-lg"><h1>Start Quiz</h1></button>
+      <div id= "countdown"></div>
+    </div>
+
+  </div>
+  <div id="myDiv" class="todos" style="display:none">
+    <form id="todo-form" method="POST">
+      <!-- <button id="random-button" class="btn btn-primary btn-lg"><h1>Go Back</h1></button><br> -->
+      <h2 id="details">Top Players</h2><br>
+      <button id = "goBack">Go Back</button><br><br>
+      <label id = "actualScore" for="todo-text">You score is: </label><br>
+      <label id = "actualScore" for="todo-text">Add your Initials</label>
+      <input type="text" placeholder="Initials" name="todo-text" id="todo-text" />
+    </form>
+    <p>Total Players Count: <span id="todo-count">0</span></p>
+    <ul id="todo-list"></ul>
+  </div>
+
+  <!-- Here we have div called "random-number" where our random number will go -->
+  <h1 class="text-center" id="random-question"></h1>
+  <h2 class="text-center" id="random-choices"></h2><br>
+  <h3 class="text-center" id="random-answer"></h3>
+
+  <!-- <script type = "text/JavaScript"> -->
+  
+   
+  <!-- </script> -->
+
+  <!-- <script src="script.js" ></script> -->
+  <script src="questions1.js" ></script>
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
