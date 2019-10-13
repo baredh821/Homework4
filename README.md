@@ -13,7 +13,7 @@ Trivia - This project covers a timer-based quiz application.It also has responsi
 
 # Screenshots
 
-<img src = "images/Screenshot1.PNG">
+<img src = "Screenshot1.PNG">
 
 # Repo Details 
 https://github.com/baredh821/Homework4
